@@ -1,0 +1,80 @@
+body {
+
+  cursor: url(img/zi.png),
+    default;
+}
+.table {
+  width: 90%;
+  border-bottom: 10px solid brown;
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  align-items: flex-end;
+}
+.beer {
+  width: 70px;
+  height: 125px;
+  background:  url(img/dino.png)
+    center bottom/100px auto no-repeat;
+  padding: 25px 25px 0;
+  transform-origin: 50% bottom;
+  transition: 0.5s;
+  
+  position: relative;
+  animation: jump 1s infinite linear;
+}
+
+.die {
+  transform: rotateX(80deg);
+}
+
+
+.dino {
+  width: 100px;
+  height: 100px;
+  background-image: url(img/dino.png);
+  background-size: 100px 100px;
+  position: relative;
+  margin-left: 220px;
+  margin-top: 40px;
+  transform-origin: 50% bottom;
+  animation: mov 4s infinite linear;
+}
+
+.de {
+  margin-left: 4px;
+
+}
+
+.ko {
+  margin-left: 600px;
+
+}
+@keyframes mov {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 800px;
+  }
+}
+
+
+@keyframes jump {
+  0% {
+    top:-5px;
+  }
+  30% {
+    top: -25px;
+  }
+  50% {
+    top: -70px;
+  }
+  80% {
+    top: -35px;
+  }
+  100% {
+    top: -15px;
+  }
+}
